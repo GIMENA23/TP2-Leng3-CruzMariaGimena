@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paisajes</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a Font Awesome para los iconos de redes sociales -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Cambiar fondo de la página */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black; /* Fondo negro */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff; /* Texto blanco para que contraste con el fondo negro */
+        }
+        .carousel-inner img {
+            object-fit: cover;
+            width: 100%;
+            height: 500px;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
+            padding: 10px;
+            border-radius: 5px;
+            bottom: 20px;
+        }
+
+        .carousel-caption h5 {
+            color: #fff;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        /* Cambiar fondo del pie de página */
+        .footer-text {
+            text-align: center;
+            padding: 20px 200px 20px 200px;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Fondo degradado */
+            color: white;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Estilos de enlaces de redes sociales */
+        .footer-text a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        .footer-text a:hover {
+            color: #feb47b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título de la página -->
+    <h1>Galería de Paisajes</h1>
+
+    <!-- Carrusel de imágenes -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/Skogafoss-Islandia.jpg" class="d-block w-100" alt="Imagen 1">
+                <div class="carousel-caption">
+                    <h5>Skogafoss - Islandia</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/montesinho-portugal.jpg" class="d-block w-100" alt="Imagen 2">
+                <div class="carousel-caption">
+                    <h5>Montesinho - Portugal</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/lago-montanas.jpg" class="d-block w-100" alt="Imagen 3">
+                <div class="carousel-caption">
+                    <h5>Lago en las Montañas</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Texto adicional en la parte inferior -->
+    <div class="footer-text">
+        <p>Esta galería presenta una colección de impresionantes paisajes naturales de diferentes partes del mundo. Disfruta de las vistas de la belleza natural que nos rodea.</p>
+        <div>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
